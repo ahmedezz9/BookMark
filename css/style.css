@@ -1,0 +1,66 @@
+body{
+    background-color: #f7ecde;
+    
+}
+::selection{
+    color: #fec260;
+}
+.container h1{
+     font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    font-size: 55px;
+    cursor: pointer;
+    
+}
+.container h1::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 15px;
+    background-color: #fec260;
+    z-index: -1;
+    bottom:0;
+    transition: all 1s;
+}
+
+.container h1:hover::before{
+    height: 100%;
+    /* background-color: red; */
+}
+
+.container .sitecon{
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    
+    border-style: dotted;
+    border-color: black transparent;
+    
+}
+
+.container h3{
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip:text;
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.container  .firsti{
+    color:#3ca55c;
+}
+.container  .secondi{
+    color:#b5ac49;
+}
+
+.input .form-control:focus{
+    border-color: #d99c39;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+label{
+    font-weight: bolder;
+}
+

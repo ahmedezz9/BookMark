@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="this site is used to save your bookmarks">
+        <title>Bookmark</title>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/360_F_316541949_SpLm967Eu4yD8GmA2KMSMVeLUxudj4q2.jpg">
+        <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body class="100vh">
+        <div class="container m-5">
+            <!--site head-->
+            <h1 class="w-25 m-auto">Bookmarker</h1>
+            <div class="sitecon m-5 py-3">
+            <div class="content text-center">
+                <i class="fa-solid fa-bookmark firsti"></i>
+                <h3>Bookmark your favorite sites</h3>
+                <i class="fa-solid fa-bookmark secondi"></i>
+            </div>
+            <!--end site head-->
+                <div class="input d-flex justify-content-center flex-wrap">
+                    <label for="sitename" class="w-100"><i class="fa-solid fa-book-bookmark mt-3 mx-1"></i>Site Name</label>
+                    <input type="text" class="form-control" id="sitename" placeholder="URL Name">
+
+                    <label for="siteurl" class="w-100"><i class="fa-solid fa-link mt-3 mx-1"></i>Site URL</label>
+                    <input type="url" class="form-control" id="siteurl" placeholder="Web Site URL">
+                    <button class="btn btn-danger text-white px-5 my-3" onclick="addUrl()">Submit</button>
+                </div>
+            
+            </div>
+            <!--table to view your data-->
+            <div class="px-5">
+                <table id="table" class="table">
+                    
+                </table>
+            </div>
+            <!--end of the table-->
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
